@@ -45,7 +45,7 @@ namespace HairSalon.Controllers
     public ActionResult Edit(int id)
     {
       Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
-      // ViewBag.CategoryId = new SelectList(_db.Categories, "CategoryId", "Name"); Do I need this?
+      // ViewBag.CategoryId = new SelectList(_db.Categories, "CategoryId", "Name"); Do I need something like this?
       return View(thisClient);
     }
 
