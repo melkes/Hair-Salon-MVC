@@ -2,12 +2,12 @@ using System.Collections.Generic;
 
 namespace HairSalon.Models
 {
-  public class Stylist
+  public class Client
   {
-    public int StylistId { get; set; }
+    public int ClientId { get; set; }
     public string Name { get; set; }
     // // Do I need something like this?
-    // public List<Stylist> Stylists { get; set; } 
+    // public List<Client> Clients { get; set; } 
   }
 
 }
