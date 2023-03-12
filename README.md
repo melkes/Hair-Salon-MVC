@@ -23,7 +23,7 @@ This is a web application that creates a website using the MVC framework and a M
     `bin`<br>
     `appsettings.json`
 - Navigate to the HairSalon directory
-- Create an appsetting.json file with the following contents, replacing the values inside brackets [] with your own:
+- Create an appsettings.json file with the following contents, replacing the values inside brackets [] with your own:
 ```
 {
   "ConnectionStrings": {
@@ -33,12 +33,13 @@ This is a web application that creates a website using the MVC framework and a M
 ```
 - In a terminal window, run:
   - `dotnet restore`
+  - `dotnet build`
   - `dotnet run`
+- You may be asked to enter your system password
 - In a web browser, navigate to https://localhost:5001/
 
 ## Known Bugs
-The application currently will not run, for unknown reasons relating to ASP.NET Core development certificates. 
-It is currently missing Client views.
+The application is not currently functional because the views are not completed, and possibly something to do with ASP.NET Core development certificates.
 
 ## License
 
