@@ -6,6 +6,8 @@ namespace HairSalon.Models
   {
     public int StylistId { get; set; }
     public string Name { get; set; }
+    public string Description { get; set; }
+    public List<Client> Clients { get; set; }
     // // Do I need something like this?
     // public List<Stylist> Stylists { get; set; } 
   }

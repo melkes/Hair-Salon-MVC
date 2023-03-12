@@ -5,9 +5,10 @@ namespace HairSalon.Models
   public class Client
   {
     public int ClientId { get; set; }
-    public string Name { get; set; }
-    // // Do I need something like this?
-    // public List<Client> Clients { get; set; } 
+    public string ClientName { get; set; }
+    public int StylistId { get; set; }
+    public Stylist Stylist { get; set; }
+
   }
 
 }
