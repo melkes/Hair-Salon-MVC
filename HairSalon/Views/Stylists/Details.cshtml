@@ -8,10 +8,11 @@
 <h2>Stylist Details</h2>
 <hr />
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<h3>
+<h3>@Html.DisplayNameFor(model => model.Details): @Html.DisplayFor(model => model.Details)<h3>
 
 @if (@Model.Clients.Count == 0)
 {
-  <h3>No clients have been added to this stylist yet!</h3>
+  <h4>No clients have been added to this stylist yet!</h4>
 } 
 else
 {
@@ -24,6 +25,6 @@ else
   </ul>
 }
 
-<p>@Html.ActionLink("Edit stylist details", "Edit", new { id = Model.StylistId })</p>
+<p>@Html.ActionLink("Edit this stylist's name/details", "Edit", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Delete this stylist", "Delete", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Back to list", "Index")</p>
