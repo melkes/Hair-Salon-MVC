@@ -11,8 +11,10 @@
   @Html.TextBoxFor(model => model.ClientName)
 
   @Html.LabelFor(model => model.Stylist)
-  @Html.DropDownList("StylistId")
+
+  @Html.DropDownListFor(model => model.StylistId, new SelectList(ViewBag.StylistList, "Value", "Text"), "Choose stylist")
+
 
   <input type="submit" value="Add new client" />
-}
+} 
 <p>@Html.ActionLink("List of clients", "Index")</p>
